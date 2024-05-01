@@ -48,18 +48,18 @@ pip install pandas numpy scikit-learn imbalanced-learn matplotlib
 python ml_model_predictor.py --target_label <target_label> --algorithm <algorithm_name>
 ```
 ## Supported Algorithms
-- ** RandomForest: Random Forest Regression
-- ** LinearRegression: Linear Regression
-- ** SVM: Support Vector Machines for regression
-- ** GradientBoosting: Gradient Boosting Regressor
+-  RandomForest: Random Forest Regression
+-  LinearRegression: Linear Regression
+-  SVM: Support Vector Machines for regression
+-  GradientBoosting: Gradient Boosting Regressor
 
 ## Example
 ``` bash
 python ml_model_predictor.py --target_label remainder__ecoli --algorithm RandomForest
 ```
 ## Outputs
-- ** The script outputs the model's performance metrics directly to the console, including MSE and R^2 for continuous targets, or accuracy for binary targets.
-- ** For binary targets, predictions are automatically converted to binary outcomes based on a threshold.
+-  The script outputs the model's performance metrics directly to the console, including MSE and R^2 for continuous targets, or accuracy for binary targets.
+-  For binary targets, predictions are automatically converted to binary outcomes based on a threshold.
 
 
 
