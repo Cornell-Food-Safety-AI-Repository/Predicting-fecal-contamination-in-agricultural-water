@@ -72,6 +72,39 @@ python ml_model_predictor.py --target_label remainder__ecoli --algorithm RandomF
 - LazyPredict
 - imbalanced-learn (optional, for handling class imbalance)
 
+Install the required packages
+
+```bash
+pip install pandas scikit-learn lazypredict imbalanced-learn
+```
+
+## Usage
+Run the script with the datset file, file path and target column
+
+``` bash
+python ML_TEST.py --file_path /path/to/mstdata.csv --target_label remainder__ecoli
+```
+Available target labels:
+- remainder__ecoli
+- remainder__HF183_pa
+- remainder__Rum2Bac_pa
+- remainder__DG3_pa
+- remainder__GFD_pa
+
+## Example Output
+### Model Performance
+
+The results of the model evaluations, including adjusted R-Squared, R-Squared, RMSE, and time taken for each model, are summarized in a table and visualized in a bar chart.
+
+#### Model Performance Table
+
+![Model Performance Table](Images/model_performance_table.png)
+
+#### Model Adjusted R-Squared Comparison
+
+![Model Adjusted R-Squared Comparison](Images/model_performance_bar.png)
+
+These visualizations provide a clear overview of how different models perform on the dataset.
 
 
 
