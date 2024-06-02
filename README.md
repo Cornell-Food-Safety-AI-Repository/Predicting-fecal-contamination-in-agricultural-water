@@ -62,6 +62,15 @@ python ml_model_predictor.py --target_label remainder__ecoli --algorithm RandomF
 -  For binary targets, predictions are automatically converted to binary outcomes based on a threshold.
 
 
+# LazyPredict Method
+
+## Dependencies
+
+- Python 3.7+
+- pandas
+- scikit-learn
+- LazyPredict
+- imbalanced-learn (optional, for handling class imbalance)
 
 
 
