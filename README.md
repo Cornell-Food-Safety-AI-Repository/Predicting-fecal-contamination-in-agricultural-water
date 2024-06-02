@@ -91,7 +91,7 @@ Available target labels:
 - remainder__DG3_pa
 - remainder__GFD_pa
 
-## Example Output
+## Example Output: remainder__ecoli
 ### Model Performance
 
 The results of the model evaluations, including adjusted R-Squared, R-Squared, RMSE, and time taken for each model, are summarized in a table and visualized in a bar chart.
