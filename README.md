@@ -1,5 +1,5 @@
 # Project Overview
-Welcome to the Environmental Factors Water Quality Analysis repository. This project is dedicated to investigating the impact of various environmental and anthropogenic factors on water quality. Using data extracted from publicly-available databases, this repository contains analyses that explore how elements like campgrounds, culverts, dams, livestock operations, and more can influence the quality of water in different ecosystems.
+This project is dedicated to investigating the impact of various environmental and anthropogenic factors on water quality. Using data extracted from publicly-available databases, this repository contains analyses that explore how elements like campgrounds, culverts, dams, livestock operations, and more can influence the quality of water in different ecosystems.
 
 ## Data Overview
 Our analysis is grounded in two primary resources:
