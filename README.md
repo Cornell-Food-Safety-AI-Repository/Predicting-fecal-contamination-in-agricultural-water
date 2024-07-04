@@ -106,5 +106,8 @@ The results of the model evaluations, including adjusted R-Squared, R-Squared, R
 
 These visualizations provide a clear overview of how different models perform on the dataset.
 
+#### Model Comparison
+![Model Comparison](Images/output.png)
+
 
 
