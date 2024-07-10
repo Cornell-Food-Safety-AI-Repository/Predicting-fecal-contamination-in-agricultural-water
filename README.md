@@ -5,13 +5,7 @@
 📖 This dataset is sourced from the publication "**Green, H., Wilder, M., Wiedmann, M., Weller, D.L. Integrative survey of 68 non-overlapping upstate New York watersheds reveals stream features associated with aquatic fecal contamination. Front. Microbiol. 12 (2021). https://doi.org/10.3389/fmicb.2021.684533**". 
 Please cite this paper when using this dataset.
 
-## Data Overview
-Our analysis is grounded in two primary resources:
-
-## Data Dictionary: 
-A comprehensive guide explaining the factors considered in our analysis, including their descriptions, data extraction dates, and citations. This dictionary covers a wide range of factors, from natural features like campgrounds and dams to human-related factors such as livestock operations and wastewater discharge sites.
-
-mstdata.csv: A dataset containing measurements and observations relevant to the study. This data serves as the foundation for our analysis, providing quantitative insight into the presence, density, and minimum distance of various factors relative to water bodies.
+# Sample analysis
 
 ## Analysis Focus
 We utilize a multidisciplinary approach to understand how different factors contribute to water quality. The project looks into:
