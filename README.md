@@ -1,5 +1,9 @@
-# Project Overview
-This project is dedicated to investigating the impact of various environmental and anthropogenic factors on water quality. Using data extracted from publicly-available databases, this repository contains analyses that explore how elements like campgrounds, culverts, dams, livestock operations, and more can influence the quality of water in different ecosystems.
+# Fecal contamination in agricultural water
+
+💧This project is dedicated to investigating the impact of various geospatial and meteorological factors on fecal contamination of watersheds.
+
+📖 This dataset is sourced from the publication "**Green, H., Wilder, M., Wiedmann, M., Weller, D.L. Integrative survey of 68 non-overlapping upstate New York watersheds reveals stream features associated with aquatic fecal contamination. Front. Microbiol. 12 (2021). https://doi.org/10.3389/fmicb.2021.684533**". 
+Please cite this paper when using this dataset.
 
 ## Data Overview
 Our analysis is grounded in two primary resources:
