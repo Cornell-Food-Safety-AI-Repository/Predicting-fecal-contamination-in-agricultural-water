@@ -43,6 +43,7 @@ pip install pandas numpy scikit-learn imbalanced-learn matplotlib
 - ** Command Line Execution: Run the script from the command line by specifying the target label and the algorithm you want to use.
 ## Required Arguments
 
+- `--file_path` (required): The path to your CSV file.
 - `--target_label` (required): The target label for the prediction model. Choose from the available target labels in the dataset.
 - `--algorithm` (required): The algorithm to use. Options include `RandomForest`, `LinearRegression`, `SVM`, `GradientBoosting`.
 
