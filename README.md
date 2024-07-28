@@ -69,7 +69,7 @@ python script.py --target_label <target_label> --algorithm SVM --C 0.5
 
 ## Example
 ``` bash
-python file.py --target_label remainder__ecoli --algorithm RandomForest
+python ML_runner.py --target_label remainder__ecoli --algorithm RandomForest
 
 ```
 ## Outputs
