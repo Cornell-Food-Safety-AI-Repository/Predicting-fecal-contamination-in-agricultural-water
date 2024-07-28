@@ -59,7 +59,8 @@ pip install pandas numpy scikit-learn imbalanced-learn matplotlib
 - `--kernel`: The kernel type to be used in the algorithm (default: 'rbf'). Applicable for the SVM algorithm. Options include linear, poly, rbf, sigmoid, precomputed.
 
 ``` bash
-python script.py --target_label <target_label> --algorithm SVM --C 0.5
+python script.py --file_path path/to/mstdata.csv --target_label <target_label> --algorithm GradientBoosting --max_depth 5
+
 ```
 
 ## Supported Algorithms
@@ -70,7 +71,8 @@ python script.py --target_label <target_label> --algorithm SVM --C 0.5
 
 ## Example
 ``` bash
-python ML_runner.py --target_label remainder__ecoli --algorithm RandomForest
+python ML_runner.py --file_path path/to/mstdata.csv --target_label remainder__ecoli --algorithm RandomForest --n_estimators 200
+
 
 ```
 ## Outputs
