@@ -82,6 +82,8 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label remainder__ec
 
 The following table summarizes the performance of different machine learning algorithms on the `remainder__ecoli` target label using default parameters:
 
+<div align="center">
+
 | Algorithm           | MSE   | R²    |
 |---------------------|-------|-------|
 | RandomForest        | 0.422 | 0.050 |
@@ -89,7 +91,10 @@ The following table summarizes the performance of different machine learning alg
 | SVM                 | 0.400 | 0.101 |
 | GradientBoosting    | 0.561 | -0.262|
 
+</div>
+
 The Mean Squared Error (MSE) and R-squared (R²) scores are calculated to evaluate the models' performance.
+
 
 
 # LazyPredict Method
