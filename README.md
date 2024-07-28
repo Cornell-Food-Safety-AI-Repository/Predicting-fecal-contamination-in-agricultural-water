@@ -41,10 +41,26 @@ pip install pandas numpy scikit-learn imbalanced-learn matplotlib
 
 ## Usage 
 - ** Command Line Execution: Run the script from the command line by specifying the target label and the algorithm you want to use.
+## Required Arguments
+
+- `--target_label` (required): The target label for the prediction model. Choose from the available target labels in the dataset.
+- `--algorithm` (required): The algorithm to use. Options include `RandomForest`, `LinearRegression`, `SVM`, `GradientBoosting`.
+
+## Optional Arguments
+
+- `--n_estimators`: The number of trees in the forest (default: 100). Applicable for `RandomForest` and `GradientBoosting`.
+  
+
+- `--max_depth`: The maximum depth of the tree (default: None). Applicable for RandomForest and GradientBoosting.
+
+- `--C`: The regularization parameter (default: 1.0). Applicable for the SVM algorithm.
+
+- `--kernel`: The kernel type to be used in the algorithm (default: 'rbf'). Applicable for the SVM algorithm. Options include linear, poly, rbf, sigmoid, precomputed.
 
 ``` bash
-python ml_model_predictor.py --target_label <target_label> --algorithm <algorithm_name>
+python script.py --target_label <target_label> --algorithm SVM --C 0.5
 ```
+
 ## Supported Algorithms
 -  RandomForest: Random Forest Regression
 -  LinearRegression: Linear Regression
@@ -53,7 +69,8 @@ python ml_model_predictor.py --target_label <target_label> --algorithm <algorith
 
 ## Example
 ``` bash
-python ml_model_predictor.py --target_label remainder__ecoli --algorithm RandomForest
+python file.py --target_label remainder__ecoli --algorithm RandomForest
+
 ```
 ## Outputs
 -  The script outputs the model's performance metrics directly to the console, including MSE and R^2 for continuous targets, or accuracy for binary targets.
