@@ -78,6 +78,18 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label remainder__ec
 ## Outputs
 -  The script outputs the model's performance metrics directly to the console, including MSE and R^2 for continuous targets, or accuracy for binary targets.
 -  For binary targets, predictions are automatically converted to binary outcomes based on a threshold.
+## Model Evaluation Results
+
+The following table summarizes the performance of different machine learning algorithms on the `remainder__ecoli` target label using default parameters:
+
+| Algorithm           | MSE   | R²    |
+|---------------------|-------|-------|
+| RandomForest        | 0.422 | 0.050 |
+| LinearRegression    | 0.469 | -0.055|
+| SVM                 | 0.400 | 0.101 |
+| GradientBoosting    | 0.561 | -0.262|
+
+The Mean Squared Error (MSE) and R-squared (R²) scores are calculated to evaluate the models' performance.
 
 
 # LazyPredict Method
