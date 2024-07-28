@@ -94,7 +94,11 @@ The following table summarizes the performance of different machine learning alg
 </div>
 
 The Mean Squared Error (MSE) and R-squared (R²) scores are calculated to evaluate the models' performance.
+## Performance Curves
 
+The following plot visualizes the performance of different machine learning algorithms based on MSE and R² scores:
+
+![Performance Curves for ML Algorithms](Images/curve.png)
 
 
 # LazyPredict Method
