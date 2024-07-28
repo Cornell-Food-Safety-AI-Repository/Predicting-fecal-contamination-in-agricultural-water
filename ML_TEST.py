@@ -43,11 +43,15 @@ data_encoded = pd.DataFrame(data_transformed, columns=transformed_columns)
 # List target labels
 target_labels = [col for col in data_encoded.columns if 'remainder__' in col]
 
-
 # Parsing command line arguments
 parser = argparse.ArgumentParser(description='Run machine learning models on the specified target label.')
 parser.add_argument('--target_label', type=str, choices=target_labels, required=True, help='Target label for the prediction model')
 parser.add_argument('--algorithm', type=str, choices=['RandomForest', 'LinearRegression', 'SVM', 'GradientBoosting'], required=True, help='Machine learning algorithm to use')
+parser.add_argument('--n_estimators', type=int, default=100, help='Number of trees in the forest (for RandomForest and GradientBoosting)')
+parser.add_argument('--max_depth', type=int, default=None, help='Max depth of the tree (for RandomForest and GradientBoosting)')
+parser.add_argument('--C', type=float, default=1.0, help='Regularization parameter (for SVM)')
+parser.add_argument('--kernel', type=str, default='rbf', help='Kernel type to be used in SVM')
+
 args = parser.parse_args()
 
 # Exclude specific feature columns for prediction
@@ -55,12 +59,12 @@ X = data_encoded.drop(target_labels, axis=1)
 y = data_encoded[args.target_label]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Choose the model based on command line argument
+# Choose the model based on command line argument and hyperparameters
 models = {
-    'RandomForest': RandomForestRegressor(n_estimators=100, random_state=42),
+    'RandomForest': RandomForestRegressor(n_estimators=args.n_estimators, max_depth=args.max_depth, random_state=42),
     'LinearRegression': LinearRegression(),
-    'SVM': SVR(),
-    'GradientBoosting': GradientBoostingRegressor(random_state=42)
+    'SVM': SVR(C=args.C, kernel=args.kernel),
+    'GradientBoosting': GradientBoostingRegressor(n_estimators=args.n_estimators, max_depth=args.max_depth, random_state=42)
 }
 
 model = models[args.algorithm]
