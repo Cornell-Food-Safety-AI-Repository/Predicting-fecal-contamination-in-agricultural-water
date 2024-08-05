@@ -81,7 +81,7 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label remainder__ec
 -  For binary targets, predictions are automatically converted to binary outcomes based on a threshold.
 ## Model Evaluation Results
 
-The following table summarizes the performance of different machine learning algorithms on the `remainder__ecoli` target label using default parameters:
+The following table summarizes the performance of different machine learning algorithms on the `combined_label` target label using default parameters:
 
 <div align="center">
 
