@@ -108,23 +108,9 @@ python ML_TEST.py --file_path /path/to/mstdata.csv --target_label combined_label
 Available target labels:
 - `combined_label`
 
-## Example Output: remainder__ecoli
-### Model Performance
+## Example Output: combined_label
 
-The results of the model evaluations, including adjusted R-Squared, R-Squared, RMSE, and time taken for each model, are summarized in a table and visualized in a bar chart.
-
-#### Model Performance Table
-
-![Model Performance Table](Images/model_performance_table.png)
-
-#### Model Adjusted R-Squared Comparison
-
-![Model Adjusted R-Squared Comparison](Images/model_performance_bar.png)
-
-These visualizations provide a clear overview of how different models perform on the dataset.
-
-#### Model Comparison
-![Model Comparison](Images/output.png)
+![Model Performance](Images/output4.png)
 
 
 
