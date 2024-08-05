@@ -47,6 +47,10 @@ pip install pandas numpy scikit-learn imbalanced-learn matplotlib seaborn
 - `--file_path` (required): The path to your CSV file.
 - `--target_label` (required): The target label for the prediction model. Choose from the available target labels in the dataset.
 - `--algorithm` (required): The algorithm to use. Options include `RandomForest`, `LinearRegression`, `SVM`, `GradientBoosting`.
+### Available target labels:
+- combined_label
+This label combine the following labels together: HF183_pa, Rum2Bac_pa, and GFD_pa, if one of them is Positive,the label is Positive
+
 
 ## Optional Arguments
 
