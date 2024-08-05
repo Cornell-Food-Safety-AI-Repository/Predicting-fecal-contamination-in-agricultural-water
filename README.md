@@ -103,13 +103,10 @@ pip install pandas scikit-learn lazypredict imbalanced-learn
 Run the script with the datset file, file path and target column
 
 ``` bash
-python ML_TEST.py --file_path /path/to/mstdata.csv --target_label remainder__ecoli
+python ML_TEST.py --file_path /path/to/mstdata.csv --target_label combined_label --algorithm LazyClassifier
 ```
 Available target labels:
-- remainder__HF183_pa
-- remainder__Rum2Bac_pa
-- remainder__DG3_pa
-- remainder__GFD_pa
+- `combined_label`
 
 ## Example Output: remainder__ecoli
 ### Model Performance
