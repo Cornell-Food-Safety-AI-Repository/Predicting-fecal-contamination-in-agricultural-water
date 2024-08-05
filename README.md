@@ -75,35 +75,13 @@ python script.py --file_path path/to/mstdata.csv --target_label combined_label -
 
 ## Example
 ``` bash
-python ML_runner.py --file_path path/to/mstdata.csv --target_label remainder__ecoli --algorithm RandomForest --n_estimators 200
+python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_label --algorithm RandomForest --n_estimators 200
 
 
 ```
-## Outputs
--  The script outputs the model's performance metrics directly to the console, including MSE and R^2 for continuous targets, or accuracy for binary targets.
--  For binary targets, predictions are automatically converted to binary outcomes based on a threshold.
-## Model Evaluation Results
+## Output
 
-The following table summarizes the performance of different machine learning algorithms on the `combined_label` target label using default parameters:
-
-<div align="center">
-
-| Algorithm           | MSE   | R²    |
-|---------------------|-------|-------|
-| RandomForest        | 0.422 | 0.050 |
-| LinearRegression    | 0.469 | -0.055|
-| SVM                 | 0.400 | 0.101 |
-| GradientBoosting    | 0.561 | -0.262|
-
-</div>
-
-The Mean Squared Error (MSE) and R-squared (R²) scores are calculated to evaluate the models' performance.
-## Performance Curves
-
-The following plot visualizes the performance of different machine learning algorithms based on MSE and R² scores:
-
-![Performance Curves for ML Algorithms](Images/curve.png)
-
+![Model Performance Table](Images/model_performance_table.png)
 
 # LazyPredict Method
 
