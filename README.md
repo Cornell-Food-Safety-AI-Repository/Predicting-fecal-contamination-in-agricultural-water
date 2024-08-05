@@ -33,10 +33,11 @@ Before you run this script, make sure you have the following installed:
 - NumPy
 - Scikit-Learn
 - Imbalanced-Learn
+- seaborn
 
 You can install the necessary libraries using pip:
 ```bash
-pip install pandas numpy scikit-learn imbalanced-learn matplotlib
+pip install pandas numpy scikit-learn imbalanced-learn matplotlib seaborn
 ```
 
 ## Usage 
@@ -124,7 +125,6 @@ Run the script with the datset file, file path and target column
 python ML_TEST.py --file_path /path/to/mstdata.csv --target_label remainder__ecoli
 ```
 Available target labels:
-- remainder__ecoli
 - remainder__HF183_pa
 - remainder__Rum2Bac_pa
 - remainder__DG3_pa
