@@ -15,8 +15,15 @@ def convert_np_to_binary(value):
     else:
         return pd.NA
 
+# Parsing command line arguments
+parser = argparse.ArgumentParser(description='Run machine learning models on the specified target label.')
+parser.add_argument('--file_path', type=str, required=True, help='The path to your CSV file')
+parser.add_argument('--target_label', type=str, required=True, help='Target label for the prediction model')
+parser.add_argument('--algorithm', type=str, choices=['LazyRegressor', 'LazyClassifier'], required=True, help='Algorithm type to use (LazyRegressor or LazyClassifier)')
+args = parser.parse_args()
+
 # Load dataset
-data = pd.read_csv('mstdata.csv')
+data = pd.read_csv(args.file_path)
 
 # Apply the binary conversion function
 for column in ['HF183_pa', 'Rum2Bac_pa', 'DG3_pa', 'GFD_pa']:
@@ -38,7 +45,7 @@ transformed_columns = transformer.get_feature_names_out()
 data_encoded = pd.DataFrame(data_transformed, columns=transformed_columns)
 
 # Combine the four binary target labels into one
-data_encoded['combined_target'] = data_encoded[['remainder__HF183_pa', 'remainder__Rum2Bac_pa', 'remainder__DG3_pa', 'remainder__GFD_pa']].max(axis=1)
+data_encoded['combined_target'] = data[['HF183_pa', 'Rum2Bac_pa', 'DG3_pa', 'GFD_pa']].max(axis=1)
 
 # List target labels
 target_labels = [col for col in data_encoded.columns if 'remainder__' in col]
@@ -47,18 +54,13 @@ print("Available target labels:")
 for label in target_labels:
     print(label)
 
-# Parsing command line arguments
-parser = argparse.ArgumentParser(description='Run machine learning models on the specified target label.')
-parser.add_argument('--target_label', type=str, choices=target_labels, required=True, help='Target label for the prediction model')
-args = parser.parse_args()
-
 # Exclude specific feature columns for prediction
-X = data_encoded.drop(target_labels, axis=1)
+X = data_encoded.drop(columns=target_labels)
 y = data_encoded[args.target_label]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Using LazyPredict
-if args.target_label == 'remainder__ecoli':
+if args.algorithm == 'LazyRegressor':
     clf = LazyRegressor(verbose=0, ignore_warnings=True, predictions=True)
 else:
     clf = LazyClassifier(verbose=0, ignore_warnings=True, predictions=True)
