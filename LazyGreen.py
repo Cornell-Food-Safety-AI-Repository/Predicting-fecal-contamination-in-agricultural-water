@@ -45,11 +45,11 @@ transformed_columns = transformer.get_feature_names_out()
 data_encoded = pd.DataFrame(data_transformed, columns=transformed_columns)
 
 # Combine the four binary target labels into one
-data_encoded['combined_target'] = data[['HF183_pa', 'Rum2Bac_pa', 'DG3_pa', 'GFD_pa']].max(axis=1)
+data_encoded['combined_label'] = data[['HF183_pa', 'Rum2Bac_pa', 'DG3_pa', 'GFD_pa']].max(axis=1)
 
 # List target labels
 target_labels = [col for col in data_encoded.columns if 'remainder__' in col]
-target_labels.append('combined_target')
+target_labels.append('combined_label')
 print("Available target labels:")
 for label in target_labels:
     print(label)
