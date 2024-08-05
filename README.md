@@ -64,7 +64,7 @@ pip install pandas numpy scikit-learn imbalanced-learn matplotlib seaborn
 - `--kernel`: The kernel type to be used in the algorithm (default: 'rbf'). Applicable for the SVM algorithm. Options include linear, poly, rbf, sigmoid, precomputed.
 
 ``` bash
-python script.py --file_path path/to/mstdata.csv --target_label <target_label> --algorithm GradientBoosting --max_depth 5
+python script.py --file_path path/to/mstdata.csv --target_label combined_label --algorithm GradientBoosting 
 
 ```
 
