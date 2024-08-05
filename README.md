@@ -81,7 +81,7 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 ```
 ## Output
 
-![Model Performance Table](Images/model_performance_table.png)
+![Model Performance Table](Images/output(4).png)
 
 # LazyPredict Method
 
