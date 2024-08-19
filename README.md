@@ -50,8 +50,6 @@ cd ListeriaFoodEnvironment
 -  LinearRegression: Linear Regression
 -  SVM: Support Vector Machines for regression
 -  GradientBoosting: Gradient Boosting Regressor
-## Usage 
-- ** Command Line Execution: Run the script from the command line by specifying the target label and the algorithm you want to use.
 ## Required Arguments
 
 - `--file_path` (required): The path to your CSV file.
@@ -71,7 +69,8 @@ cd ListeriaFoodEnvironment
 - `--C`: The regularization parameter (default: 1.0). Applicable for the `SVM` algorithm.
 
 - `--kernel`: The kernel type to be used in the algorithm (default: 'rbf'). Applicable for the `SVM` algorithm. Options include linear, poly, rbf, sigmoid, precomputed.
-
+## Usage 
+- Command Line Execution: Run the script from the command line by specifying the target label and the algorithm you want to use.
 ``` bash
 python script.py --file_path path/to/mstdata.csv --target_label combined_label --algorithm GradientBoosting 
 
