@@ -50,7 +50,6 @@ cd ListeriaFoodEnvironment
 -  LinearRegression: Linear Regression
 -  SVM: Support Vector Machines for regression
 -  GradientBoosting: Gradient Boosting Regressor
--  
 ## Usage 
 - ** Command Line Execution: Run the script from the command line by specifying the target label and the algorithm you want to use.
 ## Required Arguments
