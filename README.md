@@ -51,7 +51,11 @@ cd Predicting-fecal-contamination-in-agricultural-water
 -  LinearRegression: Linear Regression
 -  SVM: Support Vector Machines for regression
 -  GradientBoosting: Gradient Boosting Regressor
-## Required Arguments
+
+## Machine Learning Model Execution Guide
+
+This script allows users to select different machine learning algorithms via command line parameters to train models and evaluate them on a specified dataset.
+### Required Arguments
 
 - `--file_path` (required): The path to your CSV file.
 - `--target_label` (required): The target label for the prediction model. Choose from the available target labels in the dataset.
@@ -60,7 +64,7 @@ cd Predicting-fecal-contamination-in-agricultural-water
 - `combined_label` This label combine the following labels together: HF183_pa, Rum2Bac_pa, and GFD_pa, if one of them is Positive,the label is Positive
 
 
-## Optional Arguments
+### Optional Arguments
 ##### GBM (Gradient Boosting Machine) and RandomForest Specific Arguments
 - `--n_estimators`: The number of trees in the forest (default: 100). Applicable for `RandomForest` and `GradientBoosting`.
   
@@ -76,7 +80,7 @@ python script.py --file_path path/to/mstdata.csv --target_label combined_label -
 ```
 
 
-## Usage Example
+### Usage Example
 ``` bash
 python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_label --algorithm RandomForest --n_estimators 200
 
