@@ -25,6 +25,7 @@ This repository contains a Python script designed to perform predictions using v
 
 ## Installation
 
+### Dependencies
 Before you run this script, make sure you have the following installed:
 - Python 3.6 or higher
 - Pandas
