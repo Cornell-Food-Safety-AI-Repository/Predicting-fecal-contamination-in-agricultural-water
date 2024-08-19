@@ -1,11 +1,11 @@
-# Fecal contamination in agricultural water
+# Fecal Aontamination in Agricultural Water
 
 💧This project is dedicated to investigating the impact of various geospatial and meteorological factors on fecal contamination of watersheds.
 
 📖 This dataset is sourced from the publication "**Green, H., Wilder, M., Wiedmann, M., Weller, D.L. Integrative survey of 68 non-overlapping upstate New York watersheds reveals stream features associated with aquatic fecal contamination. Front. Microbiol. 12 (2021). https://doi.org/10.3389/fmicb.2021.684533**". 
 Please cite this paper when using this dataset.
 
-# Sample analysis
+# Sample Analysis
 
 ## Overview
 We utilize a multidisciplinary approach to understand how different factors contribute to water quality. The project looks into:
