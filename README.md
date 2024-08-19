@@ -45,6 +45,12 @@ To get started with this project, follow these steps:
 git clone https://github.com/FoodDatasets/ListeriaFoodEnvironment.git
 cd ListeriaFoodEnvironment
 ```
+## Supported Algorithms
+-  RandomForest: Random Forest Regression
+-  LinearRegression: Linear Regression
+-  SVM: Support Vector Machines for regression
+-  GradientBoosting: Gradient Boosting Regressor
+-  
 ## Usage 
 - ** Command Line Execution: Run the script from the command line by specifying the target label and the algorithm you want to use.
 ## Required Arguments
@@ -57,28 +63,23 @@ cd ListeriaFoodEnvironment
 
 
 ## Optional Arguments
-
+##### GBM (Gradient Boosting Machine) and RandomForest Specific Arguments
 - `--n_estimators`: The number of trees in the forest (default: 100). Applicable for `RandomForest` and `GradientBoosting`.
   
 
-- `--max_depth`: The maximum depth of the tree (default: None). Applicable for RandomForest and GradientBoosting.
+- `--max_depth`: The maximum depth of the tree (default: None). Applicable for `RandomForest` and `GradientBoosting`.
+##### SVM (Support Vector Machine) Specific Arguments
+- `--C`: The regularization parameter (default: 1.0). Applicable for the `SVM` algorithm.
 
-- `--C`: The regularization parameter (default: 1.0). Applicable for the SVM algorithm.
-
-- `--kernel`: The kernel type to be used in the algorithm (default: 'rbf'). Applicable for the SVM algorithm. Options include linear, poly, rbf, sigmoid, precomputed.
+- `--kernel`: The kernel type to be used in the algorithm (default: 'rbf'). Applicable for the `SVM` algorithm. Options include linear, poly, rbf, sigmoid, precomputed.
 
 ``` bash
 python script.py --file_path path/to/mstdata.csv --target_label combined_label --algorithm GradientBoosting 
 
 ```
 
-## Supported Algorithms
--  RandomForest: Random Forest Regression
--  LinearRegression: Linear Regression
--  SVM: Support Vector Machines for regression
--  GradientBoosting: Gradient Boosting Regressor
 
-## Example
+## Usage Example
 ``` bash
 python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_label --algorithm RandomForest --n_estimators 200
 
@@ -110,6 +111,10 @@ Run the script with the datset file, file path and target column
 ``` bash
 python ML_TEST.py --file_path /path/to/mstdata.csv --target_label combined_label --algorithm LazyClassifier
 ```
+### Command-line Arguments
+- `--file_path`: Path to the CSV file containing the dataset (required).
+- `--target_label`
+- `--algorithm`
 Available target labels:
 - `combined_label`
 
