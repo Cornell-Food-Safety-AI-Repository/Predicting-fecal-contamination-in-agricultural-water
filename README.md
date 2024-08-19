@@ -116,8 +116,7 @@ python ML_TEST.py --file_path /path/to/mstdata.csv --target_label combined_label
 - `--file_path`: Path to the CSV file containing the dataset (required).
 - `--target_label`
 - `--algorithm`
-Available target labels:
-- `combined_label`
+Available target labels: `combined_label`
 
 ## Example Output: combined_label
 
