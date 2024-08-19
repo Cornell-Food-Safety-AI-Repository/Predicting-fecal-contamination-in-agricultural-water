@@ -45,8 +45,8 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/FoodDatasets/ListeriaFoodEnvironment.git
-cd ListeriaFoodEnvironment
+git clone https://github.com/FoodDatasets/Predicting-fecal-contamination-in-agricultural-water.git
+cd Predicting-fecal-contamination-in-agricultural-water
 ```
 ## Supported Algorithms
 -  RandomForest: Random Forest Regression
