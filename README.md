@@ -15,7 +15,9 @@ Proximity: Determining the flow path distance to the nearest feature of each typ
 Water Quality Indicators: Examining parameters like E. coli concentrations, microbial source tracking markers, conductivity, dissolved oxygen, and more.
 
 This repository contains a Python script designed to perform predictions using various machine learning models based on user-specified target labels and algorithms. The script supports several regression models and can handle both numerical and categorical data through preprocessing steps like imputation and one-hot encoding.
+## Contents
 
+For specific meaning of csv file, you can view data dictionary.docx.
 ## Features
 
 - **Data Preprocessing**: Automatic handling of numerical and categorical data including missing value imputation and one-hot encoding.
