@@ -118,7 +118,8 @@ python ML_TEST.py --file_path /path/to/mstdata.csv --target_label combined_label
 - `--algorithm`
 Available target labels: `combined_label`
 
-## Example Output: combined_label
+## Example Output 
+### combined_label
 
 ![Model Performance](Images/output4.png)
 
