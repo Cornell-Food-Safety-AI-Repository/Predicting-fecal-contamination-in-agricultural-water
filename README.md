@@ -7,14 +7,12 @@ Please cite this paper when using this dataset.
 
 # Sample analysis
 
-## Analysis Focus
+## Overview
 We utilize a multidisciplinary approach to understand how different factors contribute to water quality. The project looks into:
 
 Presence and Density: Identifying if certain factors are present upstream and calculating their density per 10 km².
 Proximity: Determining the flow path distance to the nearest feature of each type.
 Water Quality Indicators: Examining parameters like E. coli concentrations, microbial source tracking markers, conductivity, dissolved oxygen, and more.
-
-# Machine Learning Model Predictor
 
 This repository contains a Python script designed to perform predictions using various machine learning models based on user-specified target labels and algorithms. The script supports several regression models and can handle both numerical and categorical data through preprocessing steps like imputation and one-hot encoding.
 
@@ -25,7 +23,7 @@ This repository contains a Python script designed to perform predictions using v
 - **Command Line Interface**: The script is executable from the command line, allowing users to specify the target label and choice of algorithm dynamically.
 - **Binary and Continuous Predictions**: Supports both continuous and binary predictions depending on the chosen target label.
 
-## Prerequisites
+## Installation
 
 Before you run this script, make sure you have the following installed:
 - Python 3.6 or higher
@@ -39,7 +37,14 @@ You can install the necessary libraries using pip:
 ```bash
 pip install pandas numpy scikit-learn imbalanced-learn matplotlib seaborn
 ```
+To get started with this project, follow these steps:
 
+1. Clone the repository:
+
+```bash
+git clone https://github.com/FoodDatasets/ListeriaFoodEnvironment.git
+cd ListeriaFoodEnvironment
+```
 ## Usage 
 - ** Command Line Execution: Run the script from the command line by specifying the target label and the algorithm you want to use.
 ## Required Arguments
