@@ -1,4 +1,4 @@
-# Fecal Aontamination in Agricultural Water
+# Fecal Contamination in Agricultural Water
 
 💧This project is dedicated to investigating the impact of various geospatial and meteorological factors on fecal contamination of watersheds.
 
