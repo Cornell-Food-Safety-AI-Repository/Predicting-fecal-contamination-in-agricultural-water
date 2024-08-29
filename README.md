@@ -90,6 +90,16 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 
 ![Model Performance Table](Images/output4in1.png)
 
+### Performance Table
+
+| Algorithm             | Cross-validation Scores (Fold 0-4) | Average Cross-validation Score | Accuracy | Precision | Recall | F1 Score |
+|-----------------------|-----------------------------------|---------------------------------|----------|-----------|--------|----------|
+| **RandomForest**      | 0, 0, 0, 0, 0                      | 0.0                             | 0.7      | 0.6       | 0.65   | 0.63     |
+| **LinearRegression**  | 0, -80, -60, -40, -20             | -40.0                           | 0.45     | 0.2       | 0.4    | 0.25     |
+| **SVM**               | 0, 0, 0, 0, 0                      | 0.0                             | 0.6      | 0.85      | 0.75   | 0.8      |
+| **GradientBoosting**  | 0, 0, 0, 0, 0                      | 0.0                             | 0.55     | 0.5       | 0.6    | 0.55     |
+
+
 # LazyPredict Method
 
 ## Dependencies
