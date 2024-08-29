@@ -92,12 +92,14 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 
 ### Performance Table
 
-| Algorithm             | Cross-validation Scores (Fold 0-4) | Average Cross-validation Score | Accuracy | Precision | Recall | F1 Score |
-|-----------------------|-----------------------------------|---------------------------------|----------|-----------|--------|----------|
-| **RandomForest**      | 0, 0, 0, 0, 0                      | 0.0                             | 0.7      | 0.6       | 0.65   | 0.63     |
-| **LinearRegression**  | 0, -80, -60, -40, -20             | -40.0                           | 0.45     | 0.2       | 0.4    | 0.25     |
-| **SVM**               | 0, 0, 0, 0, 0                      | 0.0                             | 0.6      | 0.85      | 0.75   | 0.8      |
-| **GradientBoosting**  | 0, 0, 0, 0, 0                      | 0.0                             | 0.55     | 0.5       | 0.6    | 0.55     |
+
+| Algorithm             | Cross-validation Scores (Fold 0-4)                    | Average Cross-validation Score | Accuracy | Precision | Recall | F1 Score |
+|-----------------------|------------------------------------------------------|---------------------------------|----------|-----------|--------|----------|
+| **RandomForest**      | 0.01, -0.29, 0.05, -0.11, -0.27                       | -0.12                           | 0.73     | 0.67      | 0.43   | 0.52     |
+| **LinearRegression**  | -19.74, -87.19, -35.59, -19.14, -15.78                | -35.49                          | 0.45     | 0.28      | 0.36   | 0.31     |
+| **SVM**               | -0.29, -0.41, 0.09, -0.49, -0.74                      | -0.37                           | 0.68     | 1.00      | 0.07   | 0.13     |
+| **GradientBoosting**  | -0.69, -0.89, -0.76, -0.42, -1.04                     | -0.76                           | 0.58     | 0.36      | 0.29   | 0.32     |
+
 
 
 # LazyPredict Method
