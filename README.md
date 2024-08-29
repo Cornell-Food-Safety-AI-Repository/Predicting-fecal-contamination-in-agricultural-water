@@ -92,13 +92,15 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 
 ### Performance Table
 
-
 | Algorithm             | Accuracy | Precision | Recall | F1 Score |
 |-----------------------|----------|-----------|--------|----------|
-| **RandomForest**      | 0.73     | 0.67      | 0.43   | 0.52     |
-| **LinearRegression**  | 0.45     | 0.28      | 0.36   | 0.31     |
-| **SVM**               | 0.68     | 1.00      | 0.07   | 0.13     |
-| **GradientBoosting**  | 0.58     | 0.36      | 0.29   | 0.32     |
+| **RandomForest**      | 0.725    | 0.667     | 0.429  | 0.522    |
+| **LinearRegression**  | 0.450    | 0.278     | 0.357  | 0.312    |
+| **SVM**               | 0.675    | 1.000     | 0.071  | 0.133    |
+| **GradientBoosting**  | 0.575    | 0.364     | 0.286  | 0.320    |
+| **Logistic Regression** | 0.675    | 0.545     | 0.429  | 0.480    |
+| **Neural Network**      | 0.350    | 0.300     | 0.643  | 0.409    |
+
 
 
 
