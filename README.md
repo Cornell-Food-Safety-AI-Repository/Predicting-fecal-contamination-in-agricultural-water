@@ -88,7 +88,7 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 ```
 ## Example output of four algorithms
 
-![Model Performance Table](Images/output4in1.png)
+![Model Performance Table](Images/outputnew.png)
 
 ### Performance Table
 
