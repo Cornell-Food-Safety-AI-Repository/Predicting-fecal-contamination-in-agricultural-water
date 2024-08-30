@@ -136,7 +136,35 @@ Available target labels: `combined_label`
 ### combined_label
 
 ![Model Performance](Images/output4.png)
-![Performance Table](Images/output_table.png)
+| Model                          | Accuracy | Balanced Accuracy | ROC AUC | F1 Score | Time Taken | Sensitivity | Specificity |
+|--------------------------------|----------|-------------------|---------|----------|------------|-------------|-------------|
+| GaussianNB                     | 0.78     | 0.74              | 0.74    | 0.77     | 0.01       | 0.64        | 0.85        |
+| Perceptron                     | 0.75     | 0.71              | 0.71    | 0.75     | 0.00       | 0.57        | 0.85        |
+| LabelSpreading                 | 0.75     | 0.66              | 0.66    | 0.72     | 0.01       | 0.36        | 0.96        |
+| LabelPropagation               | 0.75     | 0.66              | 0.66    | 0.72     | 0.01       | 0.36        | 0.96        |
+| RandomForestClassifier         | 0.75     | 0.66              | 0.66    | 0.72     | 0.06       | 0.36        | 0.96        |
+| NearestCentroid                | 0.70     | 0.65              | 0.65    | 0.69     | 0.01       | 0.50        | 0.81        |
+| ExtraTreeClassifier            | 0.70     | 0.65              | 0.65    | 0.69     | 0.01       | 0.50        | 0.81        |
+| KNeighborsClassifier           | 0.68     | 0.63              | 0.63    | 0.67     | 0.14       | 0.50        | 0.77        |
+| SVC                            | 0.72     | 0.62              | 0.62    | 0.68     | 0.01       | 0.29        | 0.96        |
+| NuSVC                          | 0.72     | 0.62              | 0.62    | 0.68     | 0.01       | 0.29        | 0.96        |
+| ExtraTreesClassifier           | 0.70     | 0.62              | 0.62    | 0.67     | 0.05       | 0.36        | 0.88        |
+| BernoulliNB                    | 0.68     | 0.62              | 0.62    | 0.66     | 0.01       | 0.43        | 0.81        |
+| RidgeClassifierCV              | 0.72     | 0.61              | 0.61    | 0.66     | 0.01       | 0.21        | 1.00        |
+| LogisticRegression             | 0.72     | 0.61              | 0.61    | 0.66     | 0.01       | 0.21        | 1.00        |
+| RidgeClassifier                | 0.72     | 0.61              | 0.61    | 0.66     | 0.01       | 0.21        | 1.00        |
+| BaggingClassifier              | 0.68     | 0.60              | 0.60    | 0.65     | 0.02       | 0.36        | 0.85        |
+| AdaBoostClassifier             | 0.70     | 0.59              | 0.59    | 0.64     | 0.04       | 0.21        | 0.96        |
+| XGBClassifier                  | 0.65     | 0.58              | 0.58    | 0.63     | 0.12       | 0.36        | 0.81        |
+| SGDClassifier                  | 0.62     | 0.58              | 0.58    | 0.62     | 0.00       | 0.43        | 0.73        |
+| LinearSVC                      | 0.68     | 0.57              | 0.57    | 0.62     | 0.01       | 0.21        | 0.92        |
+| LinearDiscriminantAnalysis     | 0.68     | 0.57              | 0.57    | 0.62     | 0.01       | 0.21        | 0.92        |
+| LGBMClassifier                 | 0.68     | 0.57              | 0.57    | 0.62     | 0.06       | 0.21        | 0.92        |
+| DecisionTreeClassifier         | 0.65     | 0.57              | 0.57    | 0.62     | 0.01       | 0.29        | 0.85        |
+| QuadraticDiscriminantAnalysis  | 0.35     | 0.50              | 0.50    | 0.18     | 0.02       | 1.00        | 0.00        |
+| DummyClassifier                | 0.65     | 0.50              | 0.50    | 0.51     | 0.01       | 0.00        | 1.00        |
+| CalibratedClassifierCV         | 0.65     | 0.50              | 0.50    | 0.51     | 0.02       | 0.00        | 1.00        |
+| PassiveAggressiveClassifier    | 0.55     | 0.49              | 0.49    | 0.54     | 0.00       | 0.29        | 0.69        |
 
 
 
