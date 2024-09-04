@@ -86,7 +86,7 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 
 
 ```
-## Example output of four algorithms
+## Example output of four algorithms-combined label
 
 ![Model Performance Table](Images/output_new.png)
 
@@ -101,6 +101,14 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 | **Logistic Regression** | 0.675    | 0.545     | 0.429  | 0.480    |
 | **Neural Network**      | 0.350    | 0.300     | 0.643  | 0.409    |
 
+## Example output of ecoli
+| Model            | Cross_Validation_Score |   MSE  |  RMSE  |  MAE  |    R²    |
+|------------------|------------------------|--------|--------|-------|----------|
+| SVM              | 0.1102                 | 0.303  | 0.550  | 0.443 | -0.125   |
+| RandomForest     | 0.4466                 | 0.204  | 0.452  | 0.364 |  0.242   |
+| LinearRegression | -240.5672              | 0.483  | 0.695  | 0.525 | -0.793   |
+| GradientBoosting | 0.0323                 | 0.304  | 0.551  | 0.449 | -0.127   |
+| NeuralNetwork    | -3.5591                | 0.659  | 0.812  | 0.629 | -1.444   |
 
 
 
