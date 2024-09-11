@@ -92,14 +92,14 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 
 ### Performance Table
 
-| Algorithm             | Accuracy | Precision | Recall | F1 Score |
-|-----------------------|----------|-----------|--------|----------|
-| **RandomForest**      | 0.725    | 0.667     | 0.429  | 0.522    |
-| **LinearRegression**  | 0.450    | 0.278     | 0.357  | 0.312    |
-| **SVM**               | 0.675    | 1.000     | 0.071  | 0.133    |
-| **GradientBoosting**  | 0.575    | 0.364     | 0.286  | 0.320    |
-| **Logistic Regression** | 0.675    | 0.545     | 0.429  | 0.480    |
-| **Neural Network**      | 0.350    | 0.300     | 0.643  | 0.409    |
+| Algorithm           | ROC AUC (Cross-validation) | Avg ROC AUC | Accuracy | Precision | Recall | F1 Score | ROC AUC (Test) |
+|---------------------|----------------------------|-------------|----------|-----------|--------|----------|----------------|
+| RandomForest        | [0.66, 0.4557, 0.6375, 0.5972, 0.5403] | 0.5781      | 0.650    | 0.500     | 0.214  | 0.300    | 0.549          | 
+| SVM                 | [0.7627, 0.5771, 0.5389, 0.5361, 0.4472] | 0.5724      | 0.650    | 0.000     | 0.000  | 0.000    | 0.500          |
+| GradientBoosting    | [0.5547, 0.5386, 0.6097, 0.5458, 0.5944] | 0.5686      | 0.625    | 0.455     | 0.357  | 0.400    | 0.563          |
+| LogisticRegression  | [0.6267, 0.4114, 0.4194, 0.4778, 0.5639] | 0.4998      | 0.675    | 0.545     | 0.429  | 0.480    | 0.618          |
+| NeuralNetwork       | [0.6027, 0.5686, 0.5361, 0.5556, 0.5972] | 0.5720      | 0.700    | 0.750     | 0.214  | 0.333    | 0.588          |
+
 
 ![Model Performance Table](Images/output_roc.png)
 
