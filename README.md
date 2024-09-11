@@ -100,6 +100,18 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 | **GradientBoosting**  | 0.575    | 0.364     | 0.286  | 0.320    |
 | **Logistic Regression** | 0.675    | 0.545     | 0.429  | 0.480    |
 | **Neural Network**      | 0.350    | 0.300     | 0.643  | 0.409    |
+![Model Performance Table](Images/output_roc.png)
+
+### Confusion Matrix
+| Algorithm            | True Negative | False Positive | False Negative | True Positive |
+|----------------------|---------------|----------------|----------------|---------------|
+| Gradient Boosting     | 19            | 7              | 10             | 4             |
+| Random Forest         | 23            | 3              | 8              | 6             |
+| Linear Regression     | 13            | 13             | 9              | 5             |
+| SVM                  | 26            | 0              | 13             | 1             |
+| Logistic Regression   | 21            | 5              | 8              | 6             |
+| Neural Network        | 5             | 21             | 5              | 9             |
+
 
 ## Example output of ecoli
 | Model            | Cross_Validation_Score |   MSE  |  RMSE  |  MAE  |    R²    |
@@ -110,7 +122,6 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 | GradientBoosting | 0.0323                 | 0.304  | 0.551  | 0.449 | -0.127   |
 | NeuralNetwork    | -3.5591                | 0.659  | 0.812  | 0.629 | -1.444   |
 
-![Model Performance Table](Images/output_roc.png)
 
 # LazyPredict Method
 
