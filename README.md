@@ -92,26 +92,25 @@ python ML_runner.py --file_path path/to/mstdata.csv --target_label combined_labe
 
 ### Performance Table
 
-| Algorithm           | ROC AUC (Cross-validation) | Avg ROC AUC | Accuracy | Precision | Recall | F1 Score | ROC AUC (Test) |
-|---------------------|----------------------------|-------------|----------|-----------|--------|----------|----------------|
-| RandomForest        | [0.66, 0.4557, 0.6375, 0.5972, 0.5403] | 0.5781      | 0.650    | 0.500     | 0.214  | 0.300    | 0.549          | 
-| SVM                 | [0.7627, 0.5771, 0.5389, 0.5361, 0.4472] | 0.5724      | 0.650    | 0.000     | 0.000  | 0.000    | 0.500          |
-| GradientBoosting    | [0.5547, 0.5386, 0.6097, 0.5458, 0.5944] | 0.5686      | 0.625    | 0.455     | 0.357  | 0.400    | 0.563          |
-| LogisticRegression  | [0.6267, 0.4114, 0.4194, 0.4778, 0.5639] | 0.4998      | 0.675    | 0.545     | 0.429  | 0.480    | 0.618          |
-| NeuralNetwork       | [0.6027, 0.5686, 0.5361, 0.5556, 0.5972] | 0.5720      | 0.700    | 0.750     | 0.214  | 0.333    | 0.588          |
+| Algorithm           | ROC AUC (Cross-validation)                     | Avg ROC AUC | Accuracy | Precision | Recall | F1 Score | ROC AUC (Test) |
+|---------------------|------------------------------------------------|-------------|----------|-----------|--------|----------|----------------|
+| RandomForest        | [0.66, 0.4557, 0.6375, 0.5972, 0.5403]         | 0.5781      | 0.650    | 0.500     | 0.214  | 0.300    | 0.549          |
+| NeuralNetwork       | [0.6027, 0.5686, 0.5361, 0.5556, 0.5972]       | 0.5720      | 0.700    | 0.750     | 0.214  | 0.333    | 0.588          |
+| SVM                 | [0.7627, 0.5771, 0.5389, 0.5361, 0.4472]       | 0.5724      | 0.650    | 0.000     | 0.000  | 0.000    | 0.500          |
+| GradientBoosting    | [0.5547, 0.5386, 0.6097, 0.5458, 0.5944]       | 0.5686      | 0.625    | 0.455     | 0.357  | 0.400    | 0.563          |
+| LogisticRegression  | [0.6267, 0.4114, 0.4194, 0.4778, 0.5639]       | 0.4998      | 0.675    | 0.545     | 0.429  | 0.480    | 0.618          |
 
 
-![Model Performance Table](Images/output_roc.png)
 
 ### Confusion Matrix
-| Algorithm            | True Negative | False Positive | False Negative | True Positive |
-|----------------------|---------------|----------------|----------------|---------------|
-| Gradient Boosting     | 19            | 7              | 10             | 4             |
-| Random Forest         | 23            | 3              | 8              | 6             |
-| Linear Regression     | 13            | 13             | 9              | 5             |
-| SVM                  | 26            | 0              | 13             | 1             |
-| Logistic Regression   | 21            | 5              | 8              | 6             |
-| Neural Network        | 5             | 21             | 5              | 9             |
+| Algorithm           | True Positive (TP) | False Positive (FP) | False Negative (FN) | True Negative (TN) |
+|---------------------|--------------------|---------------------|---------------------|--------------------|
+| RandomForest        | 3                  | 3                   | 11                  | 23                 |
+| SVM                 | 0                  | 0                   | 14                  | 26                 |
+| GradientBoosting    | 5                  | 6                   | 9                   | 20                 |
+| LogisticRegression  | 6                  | 5                   | 8                   | 21                 |
+| NeuralNetwork       | 3                  | 1                   | 11                  | 25                 |
+
 
 
 ## Example output of ecoli
