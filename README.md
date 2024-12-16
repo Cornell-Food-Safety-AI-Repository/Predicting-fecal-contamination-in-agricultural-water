@@ -10,18 +10,19 @@ Please cite this paper when using this dataset.
 ## Overview
 We utilize a multidisciplinary approach to understand how different factors contribute to water quality. The project looks into:
 
-Presence and Density: Identifying if certain factors are present upstream and calculating their density per 10 km².
-Proximity: Determining the flow path distance to the nearest feature of each type.
-Water Quality Indicators: Examining parameters like E. coli concentrations, microbial source tracking markers, conductivity, dissolved oxygen, and more.
+**Prediction task**:
+- Regression for predicting E.coli concentration in watersheds
+- Classification for predicting the presence of fecal contamination in watersheds
 
-This repository contains a Python script designed to perform predictions using various machine learning models based on user-specified target labels and algorithms. The script supports several regression models and can handle both numerical and categorical data through preprocessing steps like imputation and one-hot encoding.
+**Predictor and outcome variables**:
+- The detailed description of metadata for predictor and outcome variables is accessible under the file name "Fecal_Metadata.csv"
+- The cleaned dataset is accessible under the file name "processed_mstdata.csv"
 
-## Features
+**Evaluation metrics**:
+- The regression model was evaluated on R<sup>2</sup>, RMSE, MSE, and MAE
+- The classification model was evaluated on ROC AUC, sensitivity, specificity, and F1 score
+- The specific packages for calculating these metrics are accessible in the model training script under the file name "ML_runner.py"
 
-- **Data Preprocessing**: Automatic handling of numerical and categorical data including missing value imputation and one-hot encoding.
-- **Dynamic Model Selection**: Users can select from multiple regression models to apply on their specified target label.
-- **Command Line Interface**: The script is executable from the command line, allowing users to specify the target label and choice of algorithm dynamically.
-- **Binary and Continuous Predictions**: Supports both continuous and binary predictions depending on the chosen target label.
 
 ## Installation
 
