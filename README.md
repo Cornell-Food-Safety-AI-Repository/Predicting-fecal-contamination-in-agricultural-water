@@ -8,7 +8,6 @@ Please cite this paper when using this dataset.
 # Sample Analysis
 
 ## Overview
-We utilize a multidisciplinary approach to understand how different factors contribute to water quality. The project looks into:
 
 **Prediction task**:
 - Regression for predicting E.coli concentration in watersheds
